@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shaik Aisha Siddika - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+</head>
+
+<body class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-white">
+    <!-- Navbar -->
+    <header class="bg-white dark:bg-gray-800 shadow">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Shaik Aisha Siddika</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#about" class="hover:text-blue-600">About</a></li>
+                    <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
+                    <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+                </ul>
+            </nav>
+            <button onclick="document.documentElement.classList.toggle('dark')" class="ml-4 text-sm text-gray-500 hover:text-black dark:hover:text-white">
+                Toggle Dark Mode
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="text-center py-20 bg-blue-50 dark:bg-gray-700">
+        <h2 class="text-4xl font-bold mb-4">Hi, I'm Shaik Aisha Siddika</h2>
+        <p class="text-xl">Frontend Developer | UI/UX Enthusiast</p>
+        <a href="#projects" class="mt-6 inline-block bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">View My Work</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="max-w-4xl mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold mb-4">About Me</h2>
+        <p class="mb-4">
+            Hello! I’m <strong>Shaik Aisha Siddika</strong>, a passionate developer and tech enthusiast with experience in building web applications, machine learning projects, and management systems.
+        </p>
+        <p class="mb-4">
+            I specialize in frontend and backend development, with strong skills in HTML, CSS, JavaScript, React, and Python. I enjoy solving real-world problems through technology, especially using machine learning and data-driven approaches.
+        </p>
+        <p class="mb-4">
+            Some of my key projects include a Fake News Detection system using machine learning to analyze article authenticity, a Movie Recommender System with advanced search and filtering, and a comprehensive Restaurant Management System that streamlines operations.
+        </p>
+        <p class="mb-4">
+            I’m continuously learning new technologies and best practices to improve my craft. When I’m not coding, I enjoy watching movies, reading tech blogs, and exploring new ideas in AI and data science.
+        </p>
+        <p>
+            <strong>Skills:</strong> HTML, CSS, JavaScript, Tailwind CSS, React, Python, Machine Learning, Data Analysis
+        </p>
+        <a href="./my_resume.pdf" class="mt-4 inline-block text-blue-600 underline">Download Resume</a>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-white dark:bg-gray-800 py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <div class="bg-gray-100 dark:bg-gray-700 p-6 rounded shadow">
+                    <h3 class="text-xl font-semibold mb-2">Portfolio Website</h3>
+                    <p>A responsive website built with HTML, Tailwind CSS, and JavaScript to showcase my work and resume.</p>
+                   <a href="https://github.com/aisha-0302/micro_it_portfolio" target="_blank" class="text-blue-600 underline">View Project</a>
+
+                </div>
+
+                <div class="bg-gray-100 dark:bg-gray-700 p-6 rounded shadow">
+                    <h3 class="text-xl font-semibold mb-2">Fake News Detection</h3>
+                    <p>A machine learning project that detects whether an article is real or fake with high accuracy.</p>
+                    <a href="https://github.com/aisha-0302/fakenews" target="_blank" class="text-blue-600 underline">View Project</a>
+                </div>
+
+                <div class="bg-gray-100 dark:bg-gray-700 p-6 rounded shadow">
+                    <h3 class="text-xl font-semibold mb-2">Movie Recommender System</h3>
+                    <p>A system that recommends 5 movies based on your search and preferences.</p>
+                    <a href="https://github.com/aisha-0302/movie-recommender"  target="_blank" class="text-blue-600 underline">View Project</a>
+                </div>
+
+                <div class="bg-gray-100 dark:bg-gray-700 p-6 rounded shadow">
+                    <h3 class="text-xl font-semibold mb-2">Restaurant Management System</h3>
+                    <p>A full system to manage restaurant operations like orders, reservations, and menus.</p>
+                    <a href="https://github.com/aisha-0302/restaurant-management" target="_blank" class="text-blue-600 underline">View Project</a>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="max-w-4xl mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+        <form action="https://formspree.io/f/mblowokv" method="POST" class="space-y-4">
+            <input name="name" type="text" placeholder="Your Name" class="w-full p-2 border rounded" required />
+            <input name="email" type="email" placeholder="Your Email" class="w-full p-2 border rounded" required />
+            <textarea name="message" placeholder="Your Message" class="w-full p-2 border rounded h-32" required></textarea>
+            <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Send</button>
+        </form>
+        <p class="mt-4">Or email me at <a href="siddikaa0302@gmail.com" class="text-blue-600 underline">siddikaa0302@gmail.com</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white dark:bg-gray-800 py-6 text-center">
+        <p>&copy; 2025 Shaik Aisha Siddika. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
