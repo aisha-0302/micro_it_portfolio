@@ -1,19 +1,39 @@
 /* style.css */
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transition: background-color 0.3s, color 0.3s;
 }
+
 a {
     transition: color 0.3s;
 }
+
 button {
     cursor: pointer;
 }
+
 input, textarea {
     font-size: 1rem;
     outline: none;
     transition: border-color 0.3s;
 }
+
 input:focus, textarea:focus {
     border-color: #3b82f6; /* Tailwind blue-500 */
+}
+
+section {
+    scroll-margin-top: 80px; /* Smooth scrolling offset for fixed header */
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #3b82f6;
+    border-radius: 10px;
 }
